@@ -2,8 +2,10 @@ import Swiper from './swiper-bundle.js';
 import './fancybox.umd'
 
 document.addEventListener("DOMContentLoaded",function(){
-    const tabsHandlerItems = document.querySelectorAll('[data-tabs-handler]')
-    const tabsFormItems = document.querySelectorAll('[data-tabs-form]')
+    const tabsHandlerItems = document.querySelectorAll('[data-tabs-handler]');
+    const tabsFormItems = document.querySelectorAll('[data-tabs-form]');
+    const deleteUser = document.querySelectorAll('.delete_user');
+    const deleteFilm = document.querySelectorAll('.delete_film');
 
 
     const slider__horror = new Swiper('.slider__horror', {
@@ -129,5 +131,15 @@ document.addEventListener("DOMContentLoaded",function(){
         })
     }
 
+    deleteUser.forEach(item => {
+        item.addEventListener('click', () => {
+            item.parentElement.remove();
+        })
+    });
+    deleteFilm.forEach(item => {
+        item.addEventListener('click', () => {
+            item.parentElement.parentElement.remove();
+        })
+    })
 
 });

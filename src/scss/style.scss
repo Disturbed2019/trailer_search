@@ -168,6 +168,15 @@
 
 }
 .slider{
+  &__hover{
+    &:hover{
+      .slider__item{
+        transition: all .5s ease-in;
+        transform: scale(1.2);
+      }
+
+    }
+  }
   &__wrapper{
     position: relative;
   }
@@ -196,6 +205,7 @@
   &__item{
     width: 100%;
     border-radius: 20px;
+    transition: all .5s ease-in;
   }
   &__channel-item{
     max-width: 280px;
@@ -320,7 +330,7 @@
   border-color: #000000;
   padding: 5px 10px;
   cursor: pointer;
-  &.authorization__button-active{
+  &__primary{
     border-width: 2px;
     border-color: #2da6f9;
   }
@@ -330,7 +340,62 @@
     border-color: #2da6f9;
     margin-right: 0;
   }
+
 }
+.admin{
+  &__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+  }
+}
+.users{
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr );
+    grid-column-gap: 10%;
+    grid-row-gap: 5%;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.films{
+  &__list{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr );
+    grid-column-gap: 10%;
+    grid-row-gap: 10%;
+  }
+  &__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgba(255,255,255,.5);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  &__thumb{
+    width: 50px;
+  }
+  &__delete{
+    border: 2px solid #2da6f9;
+  }
+  &__btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.delete_film{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
 .authorization{
   &__button{
     display: flex;
@@ -398,11 +463,14 @@
   &__link{
     border-radius: 10px;
     border: 2px solid transparent;
+    transition: all .5s ease-in;
     & img{
       border-radius: 10px;
     }
     &:hover{
+      transition: all .5s ease-in;
       border-color: #2da6f9;
+      transform: scale(1.1);
     }
 
   }
@@ -500,7 +568,7 @@
 
 .footer{
   &__content{
-    padding: 70px 0;
+    padding: 30px 0;
     background: rgba(255,255,255,.1);
   }
   &__inner{

@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Actors</title>
+    <title>Authorization</title>
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
@@ -23,7 +23,10 @@
                             <a class="menu__list-link" href="./movie_page.html">Movies</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="/login">Sign in</a>
+                            <a class="menu__list-link" href="./actors.html">Actors</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="./login.html">Sign in</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="/registration">Sign Up</a>
@@ -63,9 +66,39 @@
 
     <main class="main">
         <div class="container">
+            <div class="authorization">
+                <div class="authorization__form-wrapper">
+                    <div class="authorization__login " data-tabs-form="login">
 
+                        <!--                       вставка формы входа -->
+                        <form method="POST" action="/login" class="form">
+                            <h2 class="form__title">Sign in</h2>
+                            <div class="form__content">
+                                <input name="username" type="text" placeholder="Username"
+                                       autofocus="true"/>
+                                <input name="password" type="password" placeholder="Password"/>
+                                <button class="btn btn__form" type="submit">Log In</button>
+                                <!--                                <a class="form__link" href="/registration">Зарегистрироваться</a>-->
+                            </div>
+                        </form>
+
+                        <!--                       вставка формы входа -->
+
+                    </div>
+                </div>
+            </div>
         </div>
+
     </main>
+
+
+
+
+
+
+
+
+
     <footer class="footer">
         <div class="footer__content">
             <div class="container">
@@ -125,6 +158,10 @@
         </div>
     </footer>
 </div>
+
+
+
+
 
 <script src="./js/main.js"></script>
 </body>

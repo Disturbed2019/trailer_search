@@ -1,11 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Actors</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
@@ -17,10 +17,13 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__list-item">
-                            <a class="menu__list-link " href="./index.html">Home</a>
+                            <a class="menu__list-link active" href="/">Home</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="./movie_page.html">Movies</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="./actors.html">Actors</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="/login">Sign in</a>
@@ -61,11 +64,74 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main admin">
         <div class="container">
+            <div class="admin__wrapper">
+                <a class="btn btn__primary delete_user" href="./list_users.html">Список пользователей</a>
+                <a class="btn btn__primary delete_user" href="./list_films.html">Список фильмов</a>
+                <a class="btn btn__primary delete_user" href="./add_film.html">Добавить фильм</a>
+            </div>
+            <div class="users">
+                <ul class="users__list">
+                    <li class="users__item">
+                        <span>1</span>
+                        <p>Имя пользователя</p>
+                        <button class="btn btn__primary delete_user">Удалить пользователя</button>
+                    </li>
+                    <li class="users__item">
+                        <span>1</span>
+                        <p>Имя пользователя</p>
+                        <button class="btn btn__primary delete_user">Удалить пользователя</button>
+                    </li>
+                    <li class="users__item">
+                        <span>1</span>
+                        <p>Имя пользователя</p>
+                        <button class="btn btn__primary delete_user">Удалить пользователя</button>
+                    </li>
+                    <li class="users__item">
+                        <span>1</span>
+                        <p>Имя пользователя</p>
+                        <button class="btn btn__primary delete_user">Удалить пользователя</button>
+                    </li>
+                    <li class="users__item">
+                        <span>1</span>
+                        <p>Имя пользователя</p>
+                        <button class="btn btn__primary delete_user">Удалить пользователя</button>
+                    </li>
+                    <li class="users__item">
+                        <span>1</span>
+                        <p>Имя пользователя</p>
+                        <button class="btn btn__primary delete_user">Удалить пользователя</button>
+                    </li>
+                    <li class="users__item">
+                        <span>1</span>
+                        <p>Имя пользователя</p>
+                        <button class="btn btn__primary delete_user">Удалить пользователя</button>
+                    </li>
+                    <li class="users__item">
+                        <span>1</span>
+                        <p>Имя пользователя</p>
+                        <button class="btn btn__primary delete_user">Удалить пользователя</button>
+                    </li>
+                    <li class="users__item">
+                        <span>1</span>
+                        <p>Имя пользователя</p>
+                        <button class="btn btn__primary delete_user">Удалить пользователя</button>
+                    </li>
+                </ul>
 
+            </div>
         </div>
     </main>
+
+
+
+
+
+
+
+
+
     <footer class="footer">
         <div class="footer__content">
             <div class="container">
@@ -128,4 +194,5 @@
 
 <script src="./js/main.js"></script>
 </body>
+
 </html>
