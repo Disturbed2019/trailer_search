@@ -1,11 +1,14 @@
 import Swiper from './swiper-bundle.js';
-import './fancybox.umd'
+import './fancybox.umd';
+
 
 document.addEventListener("DOMContentLoaded",function(){
     const tabsHandlerItems = document.querySelectorAll('[data-tabs-handler]');
     const tabsFormItems = document.querySelectorAll('[data-tabs-form]');
     const deleteUser = document.querySelectorAll('.delete_user');
     const deleteFilm = document.querySelectorAll('.delete_film');
+    // const submitBtn = document.querySelector('.film_submit');
+    // const addForm = document.querySelector('#add__film');
 
 
     const slider__horror = new Swiper('.slider__horror', {
@@ -140,6 +143,40 @@ document.addEventListener("DOMContentLoaded",function(){
         item.addEventListener('click', () => {
             item.parentElement.parentElement.remove();
         })
-    })
+    });
+
+
+
+
+
+
+    // submitBtn.addEventListener('click', (e)=> {
+    //     e.preventDefault();
+    //     const obj = {};
+    //     const input = document.querySelectorAll('input');
+    //     const select = document.querySelector('select');
+    //     obj['category'] = select.value;
+    //     input.forEach(item => {
+    //         let key=item.id;
+    //         obj[key] = item.value
+    //     });
+    //
+    //     let url = 'https://jsonplaceholder.typicode.com/posts';
+    //
+    //     fetch(url, {
+    //         method: 'post',
+    //         headers: {
+    //             "Content-type": "application/json; charset=UTF-8"
+    //         },
+    //         body: JSON.stringify(obj)
+    //
+    //     }).then(response => response.json())
+    //         .then(res => console.log(res))
+    //         .catch(function(err) {
+    //             // Error :(
+    //         });
+    //
+    //
+    // })
 
 });

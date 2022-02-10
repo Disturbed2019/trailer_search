@@ -5,6 +5,22 @@
 @import 'libs';
 @import 'global';
 
+input, select{
+  outline: none;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 5px 10px;
+  background: transparent;
+  color: #FFFFFF;
+  border-color: rgba(255,255,255,.5);
+  border-radius: 10px;
+
+  &:active, &:focus{
+    border-width: 2px;
+    border-color: #2da6f9;
+  }
+}
+
 .logo{
   display: block;
 }
@@ -433,25 +449,29 @@
     justify-content: center;
     align-items: center;
   }
-  input{
-    outline: none;
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 5px 10px;
-    background: transparent;
-    color: #FFFFFF;
-    border-color: rgba(255,255,255,.5);
-    border-radius: 10px;
-
-    &:active, &:focus{
-      border-width: 2px;
-      border-color: #2da6f9;
-    }
-  }
   &__link{
     margin-top: 10px;
     color: #FFFFFF;
   }
+  &__control{
+    display: flex;
+    margin-bottom: 10px;
+    & label{
+      margin-left: 20px;
+    }
+    & input, select{
+      max-width: 250px;
+    }
+    & select{
+      color: red;
+    }
+
+  }
+}
+.add{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
 }
 .movies{
   &__list{

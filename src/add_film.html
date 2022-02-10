@@ -73,7 +73,51 @@
             </div>
         </div>
         <div class="add">
+            <form action="add_film.html" id="add__film" >
+                <div class="form__control">
+                <select name="category" id="film_category">
+                    <option value="horror" selected>Horror</option>
+                    <option value="action" >Action</option>
+                    <option value="romance">Romance</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="historical">Historical</option>
+                    <option value="sci-fi">Sci-fi</option>
+                </select>
+                                    <label for="film_category">Категория</label>
+                                </div>
+                <div class="form__control">
+                    <input type="text" id="title">
+                    <label for="title">Название</label>
+                </div>
+                <div class="form__control">
+                    <input type="text" id="description">
+                    <label for="description">Описание</label>
+                </div>
+                <div class="form__control">
+                    <input type="file" id="preview_img">
+                    <label for="preview_img">Постер</label>
+                </div>
 
+                <div class="form__control">
+                    <input type="text" id="year">
+                    <label for="year">Год</label>
+                </div>
+                <div class="form__control">
+                    <input type="text" id="rating">
+                    <label for="rating">Рейтинг</label>
+                </div>
+                <div class="form__control">
+                    <input type="file" id="bg_img">
+                    <label for="bg_img">Картинка для бэкграунда</label>
+                </div>
+                <div class="form__control">
+                    <input type="text" id="trailer_link">
+                    <label for="trailer_link">Ссылка на трейлер</label>
+                </div>
+
+                <button type="submit" class="btn btn__primary film_submit" >Добавить фильм</button>
+            </form>
         </div>
 
     </main>
